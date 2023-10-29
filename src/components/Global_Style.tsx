@@ -51,6 +51,7 @@ table {
 
 html{
 		font-size: 62.5%;
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
 `
 export default Global_Style
