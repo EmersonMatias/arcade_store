@@ -5,6 +5,8 @@ export const Container = styled.header`
     height: 8rem;
     padding: 0 8rem;
     display: flex;
+    position: absolute;
+    top: 0;
     justify-content: space-between;
     background: rgb(89,15,98);
     background: linear-gradient(180deg, rgba(89,15,98,1) 0%, rgba(38,17,73,1) 100%);
