@@ -1,0 +1,92 @@
+{
+    "products": [
+        {
+            "id": "1",
+            "name": "Xbox Series S",
+            "price": 2299.99,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/console-microsoft-xbox-series-s-500gb-branco-rrs-00006_1601067301_original-removebg-preview.png",
+            "category": "console",
+            "promotion": false
+        },
+        {
+            "id": "2",
+            "name": "Starfield",
+            "price": 69.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.35187.13567343664224659.1eb6fdf9-8a0b-4344-a135-ab17dfa3c609.c83b6d6a-56c3-4c3f-8b31-456cfb21c3b7?q=90",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "3",
+            "name": "Payday 3",
+            "price": 39.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.41648.13779457877292855.4803a4b4-94cc-4b12-bf91-ad49bcb0c65c.f14df05b-5717-4af8-a8ab-6201e4159608",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "4",
+            "name": "Like a Dragon: Ishin!",
+            "price": 59.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.14121.13986316021730261.2a69ea94-8704-4fd3-951c-3403df80be07.e261d67a-1634-4f7d-9e55-dc8fd5c778fe",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "5",
+            "name": "Gotham Knights",
+            "price": 14.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.27843.70676690581893559.a37ccc27-65ef-4e47-856a-9fcdd0c1017f.3166464c-271b-42c6-b052-0f1aa9432426",
+            "category": "game",
+            "promotion": true
+        },
+        {
+            "id": "6",
+            "name": "Cities: Skylines II - PC Edition",
+            "price": 49.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.63682.14241982748923031.b7ab82d8-956b-4d85-b739-c1cd07cb25df.6e134b4c-c4db-4dc7-bbdd-f736c3d3fd94",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "7",
+            "name": "Forza Motorsport Standard Edition",
+            "price": 349.00,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.57449.14311721322459352.08838dcd-1049-42ef-a004-b13ad1d41946.4eeb1f6f-f279-4d5b-83b0-8fb4cc7f9aea",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "8",
+            "name": "Dead Space",
+            "price": 149.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.25575.14469217982348128.0d4542d8-d5d4-457f-b623-b779795bbba7.0799b27c-084d-47df-917b-c221babc68ef?",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "9",
+            "name": "A Plague Tale: Requiem",
+            "price": 99.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.4956.13537574391772742.e387dd56-e35c-40fb-bc0c-c0c1decef3a1.f27cfe2b-b8b2-47f3-a92e-0eebe096efa2",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "10",
+            "name": "Anthem",
+            "price": 29.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.57681.68414427103463856.1f5379b8-b0df-4559-8bfc-233157d35637.5e82d382-3ee0-4c61-b10d-b244c8f284af",
+            "category": "game",
+            "promotion": true
+        },
+        {
+            "id": "11",
+            "name": "Mouse Gamer Vermelho",
+            "price": 49.99,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/file-removebg-preview.png",
+            "category": "periferico",
+            "promotion": true
+        }
+    ]
+}

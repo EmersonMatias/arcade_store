@@ -1,3 +1,4 @@
+import BestSellers from "./BestSellers/BestSellers";
 import HeroSection from "./HeroSection/HeroSection";
 import Container from "./Home_Styles";
 
@@ -6,9 +7,7 @@ export default function Home_Page(){
         <Container>
           <HeroSection/>
 
-          <div className="maisvendidos">
-            MAIS VENDIDOS
-          </div>
+          <BestSellers/>
         </Container>
     )
 }
