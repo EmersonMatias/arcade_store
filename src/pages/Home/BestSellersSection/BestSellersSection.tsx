@@ -6,8 +6,8 @@ import axios from "axios";
 import { AxiosResponse } from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
 import "swiper/css/bundle"
+import {H2Section} from "../../../components/General_Styles";
 
 
 export default function BestSellers() {
@@ -23,7 +23,7 @@ export default function BestSellers() {
     return (
         <Container>
             <div className="bestSellerTop">
-                <h2 className="bestSellerTitle">MAIS VENDIDOS</h2>
+                <H2Section>MAIS VENDIDOS</H2Section>
                 <WhiteButton name="Ver tudo" />
             </div>
 

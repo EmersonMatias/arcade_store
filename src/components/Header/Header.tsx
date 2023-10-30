@@ -18,12 +18,8 @@ export default function Header() {
                 <Nav_Button title="Contato" path="/" />
                 <Nav_Button title="Login" path="/" icon={<FaUserCircle className="iconLogin"/>} />
 
-
                 <AiOutlineShoppingCart className="iconCart" />
             </NavBar>
-
-
-
 
         </Container>
     )
