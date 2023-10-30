@@ -6,13 +6,11 @@ export const Container = styled.div`
     height: 100vh;
     padding-top: 8rem;
     color: #FFFFFF;
-
     background-image: url(${Background});
     background-size: cover;
 
     .promotionCard{
         width: 56rem;
-        box-shadow: rgb(16, 1, 14) 0px 20px 30px;
         border-radius: 2.4rem;
         top: 16rem;
         left: 16rem;
@@ -23,7 +21,8 @@ export const Container = styled.div`
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
         border:1px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        box-shadow: rgb(16, 1, 14) 0px 20px 30px;
+
 
         .commomPhrase{
             font-size: 3.2rem;

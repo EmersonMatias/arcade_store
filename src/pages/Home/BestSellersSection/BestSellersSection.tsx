@@ -1,16 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import Product, { IProduct } from "../../../components/Product/Product";
-import WhiteButton from "../../../components/WhiteButton/WhiteButton";
-import { Container } from "./BestSellers_Styles";
-import axios from "axios";
-import { AxiosResponse } from "axios";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import "swiper/css/bundle"
-import {H2Section} from "../../../components/General_Styles";
+import GeneralSection from "../../../components/GeneralSection/GeneralSection";
+import { IProduct } from "../../../components/Product/Product";
+import axios, { AxiosResponse } from "axios";
 
-
-export default function BestSellers() {
+export default function BestSellersSection(){
     const { data: products } = useQuery({
         queryKey: ["products"],
         queryFn: async () => {
@@ -18,23 +11,8 @@ export default function BestSellers() {
             return response
         }
     })
-
-    console.log(products)
-    return (
-        <Container>
-            <div className="bestSellerTop">
-                <H2Section>MAIS VENDIDOS</H2Section>
-                <WhiteButton name="Ver tudo" />
-            </div>
-
-            <Swiper spaceBetween={40} modules={[Navigation]} rewind={true} slidesPerView={3} navigation={{ enabled: true }} >
-                {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
-                    <SwiperSlide>
-                        <Product id={id} category={category} name={name} price={price.toString()} productImage={productImage} promotion={promotion} />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-
-        </Container>
+   
+    return(
+        <GeneralSection name="MAIS VENDIDOS" products={products}/>
     )
-} 
+}
