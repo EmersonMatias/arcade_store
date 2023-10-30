@@ -1,7 +1,7 @@
 import { Container, NavLinkStyled, ProductImage } from "./Product_Styles";
 import { Link } from "react-router-dom";
 
-export default function Product({ name, price, productImage}: IProduct) {
+export default function Product({id, name, price, productImage, category, promotion}: IProduct) {
     return (
         <Container >
             <Link to={""}>
@@ -23,10 +23,10 @@ export default function Product({ name, price, productImage}: IProduct) {
 
 
 export type IProduct = {
-    id?: number
+    id: number
     name: string,
     price: string,
     productImage: string,
-    category?: string,
-    promotion?: boolean
+    category: string,
+    promotion: boolean
 }
