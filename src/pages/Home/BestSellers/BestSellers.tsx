@@ -30,7 +30,7 @@ export default function BestSellers() {
             <Swiper spaceBetween={40} modules={[Navigation]} rewind={true} slidesPerView={3} navigation={{ enabled: true }} >
                 {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
                     <SwiperSlide>
-                        <Product id={id} category={category} name={name} price={price} productImage={productImage} promotion={promotion} />
+                        <Product id={id} category={category} name={name} price={price.toString()} productImage={productImage} promotion={promotion} />
                     </SwiperSlide>
                 ))}
             </Swiper>

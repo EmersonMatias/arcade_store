@@ -45,4 +45,5 @@ export const ProductImage = styled.div`
 
 export const NavLinkStyled = styled(NavLink)`
     text-decoration: none;
+    margin-bottom: 2.4rem;
 `

@@ -1,7 +1,10 @@
+import PurpleButton from "../PurpleButton/PurpleButton";
 import { Container, NavLinkStyled, ProductImage } from "./Product_Styles";
 import { Link } from "react-router-dom";
 
-export default function Product({id, name, price, productImage, category, promotion}: IProduct) {
+export default function Product({name, price, productImage}: IProduct) {
+    const pricea = price.replace(".", ",")
+
     return (
         <Container >
             <Link to={""}>
@@ -12,10 +15,9 @@ export default function Product({id, name, price, productImage, category, promot
 
             <NavLinkStyled to={""}>
                 <p className="productName">{name}</p>
-                <p className="productPrice">R$ {price}</p>
+                <p className="productPrice">R$ {pricea}</p>
             </NavLinkStyled>
-
-
+            <PurpleButton name="Adicionar"/>
 
         </Container>
     )
