@@ -9,7 +9,6 @@ export default function Footer() {
         { title: "Políticas", texts: ["Termos e Condições", "Política de Envio", "Política de Reembolso", "Política de Privacidade", "Política de Cookies", "FAQ"] }
     ]
 
-
     return (
         <Container>
             <TopFooter>

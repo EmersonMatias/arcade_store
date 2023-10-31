@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
     width: 100%;
-    background-color: aquamarine;
-
 `
 
 export const TopFooter = styled.div`
