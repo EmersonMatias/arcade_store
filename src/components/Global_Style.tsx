@@ -53,5 +53,12 @@ html{
 		font-size: 62.5%;
 		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	}
+
+@media screen and (max-width: 1200px) {
+	html{
+		font-size: 30%;
+
+	}
+}
 `
 export default Global_Style
