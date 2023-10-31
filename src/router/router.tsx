@@ -1,6 +1,5 @@
 import { createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import Home_Page from "../pages/Home/Home_Page";
-import Header from "../components/Header/Header";
 import Home_Layout from "./layouts/Home_Layout";
 
 
