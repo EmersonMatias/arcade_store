@@ -51,8 +51,8 @@ export const PromotionContainer = styled.div`
 `
 
 export const PromotionImgContainer = styled.div<{top: number, right: number}>`
-    width: 39rem;
-    height: 49rem;
+    width: 38rem;
+    height: 48rem;
     border-radius: 2rem;
     top: ${props => props.top}rem;
     right: ${props => props.right}rem;

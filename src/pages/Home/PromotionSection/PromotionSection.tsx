@@ -25,7 +25,7 @@ export default function PromotionSection() {
             top: 8, right: 64, url: "https://store-images.s-microsoft.com/image/apps.63682.14241982748923031.b7ab82d8-956b-4d85-b739-c1cd07cb25df.6e134b4c-c4db-4dc7-bbdd-f736c3d3fd94"
         }
     ]
-
+ 
     return (
         <Container>
             <PromotionContainer>
