@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.header`
@@ -13,9 +14,12 @@ export const Container = styled.header`
     color: #FFFFFF;
 `
 
-export const Logo = styled.div`
+export const Logo = styled(NavLink)`
     display: flex;
     align-items: center;
+    text-decoration: none;
+    color: #FFFFFF;
+
 
     .iconLogo{
         font-size: 5rem;
