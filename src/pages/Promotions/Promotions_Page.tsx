@@ -3,7 +3,7 @@ import GeneralPageProducts from "../../components/GeneralPageProducts/GeneralPag
 import { IProduct } from "../../components/Product/Product";
 import axios, { AxiosResponse } from "axios";
 
-export default function Products_Page(){
+export default function Promotions_Page(){
     const { data: products } = useQuery({
         queryKey: ["products"],
         queryFn: async () => {
@@ -13,6 +13,6 @@ export default function Products_Page(){
       })
 
     return(
-        <GeneralPageProducts title="LOJA" products={products}/>
+        <GeneralPageProducts title="PROMOÇÕES" products={products}/>
     )
 }
