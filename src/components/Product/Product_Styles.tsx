@@ -3,7 +3,7 @@ import BackgoundProduct from "../../assets/background.jpg"
 import { NavLink } from "react-router-dom";
 
 export const Container = styled.div`
-    width: 36rem;
+    width: 30rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,8 +19,8 @@ export const Container = styled.div`
  
 
 export const ProductImage = styled.div`
-    width: 36rem;
-    height: 36rem;
+    width: 30rem;
+    height: 32rem;
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ export const ProductImage = styled.div`
     overflow: hidden;
 
     img{
-        height: 24rem;
+        height: 20rem;
         -webkit-box-reflect:below 0px linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0,0.3));
     }
 

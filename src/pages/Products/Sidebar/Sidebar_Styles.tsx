@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    width: 20%;
+    width: 15%;
     height: 100vh;
     color: #FFFFFF;
 
@@ -13,5 +13,5 @@ export const Container = styled.div`
         font-weight: 100;
     }
 
-    background-color: #000000;
+
 `
