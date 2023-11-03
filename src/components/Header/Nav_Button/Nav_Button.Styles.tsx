@@ -3,11 +3,11 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    font-size: 2.4rem;
+    font-size: 2rem;
     margin: 0 0.8rem;
     display: flex;
     color: #FFFFFF;
-    font-weight: bold;
+    font-weight: 400;
     border: none;
     flex-direction: column;
     position: relative;
@@ -33,7 +33,6 @@ export const StyledNavLink = styled(NavLink)`
 `
 
 export const PoppoverContainer = styled.div`
-    font-size: 2.1rem;
     font-weight: 100;
     padding: 1.6rem;
     width: 18rem;

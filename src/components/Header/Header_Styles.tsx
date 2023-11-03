@@ -22,7 +22,7 @@ export const Logo = styled(NavLink)`
 
 
     .iconLogo{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .phraseLogo{

@@ -40,10 +40,10 @@ export default function Nav_Button({ title, path, icon }: INav_Button) {
 
 
             {poppoverVisibility && title === "Produtos" && <PoppoverContainer className="poppover" onMouseOver={() => { handleMouseOverPoppover() }} onMouseLeave={() => handleMouseLeavePoppoer()}>
-                <StyledNavLink to={""} className="poppoverParagraph">Mais vendidos</StyledNavLink>
-                <StyledNavLink to={""} className="poppoverParagraph">Games</StyledNavLink>
-                <StyledNavLink to={""} className="poppoverParagraph">Consoles</StyledNavLink>
-                <StyledNavLink to={""} className="poppoverParagraph">Periféricos</StyledNavLink>
+                <StyledNavLink to="maisvendidos" className="poppoverParagraph">Mais vendidos</StyledNavLink>
+                <StyledNavLink to="games" className="poppoverParagraph">Games</StyledNavLink>
+                <StyledNavLink to="consoles" className="poppoverParagraph">Consoles</StyledNavLink>
+                <StyledNavLink to="perifericos" className="poppoverParagraph">Periféricos</StyledNavLink>
             </PoppoverContainer>
             }
 
