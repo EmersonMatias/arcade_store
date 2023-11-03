@@ -36,5 +36,5 @@ export default function GeneralPageProducts({products, title}: IGeneralPageProdu
 
 type IGeneralPageProducts = {
     title: string,
-    products: AxiosResponse<IProduct[]>
+    products: AxiosResponse<IProduct[]> | undefined
 }
