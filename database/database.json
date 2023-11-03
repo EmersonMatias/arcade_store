@@ -87,6 +87,137 @@
             "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/file-removebg-preview.png",
             "category": "periferico",
             "promotion": true
+        },
+        {
+            "id": "12",
+            "name": "Mouse Gamer Sem Fio Logitech G703 LIGHTSPEED",
+            "price": 549.90,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61-jAartdjL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "13",
+            "name": "Razer Mouse DeathAdder",
+            "price": 168.95 ,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/8189uwDnMkL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "14",
+            "name": "Mouse Gamer MS-G260 x7",
+            "price": 37.25,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/51-99vGI7oL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "15",
+            "name": "Redragon MOUSE TITANOBOA2 M802",
+            "price": 237.94,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61uPQHPriaL._AC_SL1500_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": true
+        },
+        {
+            "id": "16",
+            "name": "Redragon MOUSE GAMER GRIFFIN BRANCO",
+            "price": 131.71,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/51s5tMePE_L._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": true
+        },
+        {
+            "id": "17",
+            "name": "TECLADO REDRAGON GAMER MEMBRANA DYAUS 2 BRANCO",
+            "price": 158.90,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/612qLp7VTPL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "18",
+            "name": "Kit Gamer Teclado Semi Mecanico Gamer Iluminado, Mouse Gamer Com Led USB 3200DPI, 7 Botões",
+            "price": 65.00,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/71k-jVHZNuL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": true
+        },
+        {
+            "id": "19",
+            "name": "Kit Teclado E Mouse Gamer Iluminado Rgb Mecânico",
+            "price": 89.99,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/51QWqcymm9L._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "20",
+            "name": "Teclado Gamer Semi Mecânico Titorion TE001",
+            "price": 59.90 ,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/71DwpujmRqL._AC_SX679_-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "21",
+            "name": "Teclado Gamer Led Retroiluminado Play On ",
+            "price": 114.90,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/teclado_gamer_play_on_led_retroiluminado_letron_5205_1_8140bd8cacacbb5988165d1b377c154a-removebg-preview.png",
+            "category": "periferico",
+            "promotion": false
+        },
+        {
+            "id": "22",
+            "name": "PlayStation®4 + God of War Ragnarök",
+            "price": 2909.90 ,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61Jd6PKi6SL._AC_SX679_-removebg-preview.png",
+            "category": "console",
+            "promotion": false
+        },
+        {
+            "id": "23",
+            "name": "Console Xbox One S Branco 1TB",
+            "price": 2750.00 ,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61pLq5gGgjL._AC_SX679_-removebg-preview.png",
+            "category": "console",
+            "promotion": false
+        },
+        {
+            "id": "24",
+            "name": "Console Xbox Series X + Diablo IV",
+            "price": 4389.00,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61eRGcyaTlL._AC_SX679_-removebg-preview.png",
+            "category": "console",
+            "promotion": false
+        },
+        {
+            "id": "25",
+            "name": "Console Xbox Series X",
+            "price": 4269.00,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/61eYoSqkHnL._AC_SL1200_-removebg-preview.png",
+            "category": "console",
+            "promotion": false
+        },
+        {
+            "id": "26",
+            "name": "Console PlayStation®5 Edição Digital",
+            "price": 3719.07,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/514B_oUfG-L._AC_SX522_-removebg-preview.png",
+            "category": "console",
+            "promotion": true
+        },
+        {
+            "id": "27",
+            "name": "Console PlayStation 4 - Slim 1TB - Hits Bundle v4 (Versão Nacional)",
+            "price": 3299.00,
+            "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/81Nc23CNVAL._AC_SX679_-removebg-preview.png",
+            "category": "console",
+            "promotion": false
         }
+
+        
+        
     ]
 }
