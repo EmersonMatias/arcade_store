@@ -1,6 +1,7 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled(NavLink)`
     width: 35rem;
     height: 50rem;
     border-radius: 4rem;
@@ -11,6 +12,7 @@ export const Container = styled.div`
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    text-decoration: none;
 
     .categoryCardImg{
         width: 35rem;

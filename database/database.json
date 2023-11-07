@@ -215,9 +215,70 @@
             "productImage": "https://arcade-store-bucket.s3.sa-east-1.amazonaws.com/81Nc23CNVAL._AC_SX679_-removebg-preview.png",
             "category": "console",
             "promotion": false
+        },
+        {
+            "id": "28",
+            "name": "Lies of P",
+            "price": 300.00,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.8000.14167207133116460.47e9afed-5648-49f3-aa78-034a762fbc26.5d6dba1a-d04e-42aa-9dc2-9286e72dc007",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "29",
+            "name": "7 Days to Die",
+            "price": 124.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.28856.69802328231064156.03ff84cc-b6b1-4226-8e6c-545d183e5fbf.b6546b0b-9563-4129-b79e-15bb4282048a",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "30",
+            "name": "ARK: Ultimate Survivor Edition",
+            "price": 159.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.52261.14036931078975578.35527dd4-bd1c-43d9-90ff-3a801a47df6a.d5645ab8-82fd-46e0-b961-9fc179d12fe4?",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "31",
+            "name": "Assassin's Creed Odyssey",
+            "price": 299.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.51903.71972716530068101.ccdcadf1-1d2a-49f2-9c37-0b0a27e5a53c.08e06d2d-1104-4c80-b879-91facf8348d5?",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "32",
+            "name": "Assassin's Creed® Origins",
+            "price": 159.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.29520.63657969076271726.154f5a09-55ab-4b31-bc57-4e0335fab06a.98159a5f-99d5-4db9-89bc-4ae02f971596?",
+            "category": "game",
+            "promotion": true
+        },
+        {
+            "id": "33",
+            "name": "Battlefield™ 1 Revolution",
+            "price": 159.00,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.55135.68596255437297164.99e6fb73-cd5e-440f-90c2-d8d2eb40a69d.b999154f-df74-4182-a63e-b2f13b9761db?",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "34",
+            "name": "Battlefield™ V",
+            "price": 259.00,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.15924.64032621253256243.9745cf01-8239-4973-8193-31de18936f03.5e2269fb-2db9-49d1-b725-b355332c023c",
+            "category": "game",
+            "promotion": false
+        },
+        {
+            "id": "35",
+            "name": "Dead Cells",
+            "price": 99.99,
+            "productImage": "https://store-images.s-microsoft.com/image/apps.33704.68724117649475771.eac68952-84aa-42f0-875b-09de4c2ee208.c6483868-0337-4d5f-bc1f-36132804e3d7?",
+            "category": "game",
+            "promotion": false
         }
-
-        
-        
     ]
 }

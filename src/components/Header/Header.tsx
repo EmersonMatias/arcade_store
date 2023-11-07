@@ -18,7 +18,7 @@ export default function Header() {
             <NavBar>
                 <Nav_Button title="Produtos" path="/produtos" />
                 <Nav_Button title="Promoções" path="/promocoes" />
-                <Nav_Button title="Contato" path="/" />
+                <Nav_Button title="Contato" path="/contatos" />
                 <Nav_Button title="Login" path="/" icon={<FaUserCircle className="iconLogin" />} />
 
                 <AiOutlineShoppingCart className="iconCart" />

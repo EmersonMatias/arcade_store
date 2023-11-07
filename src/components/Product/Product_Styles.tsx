@@ -19,8 +19,8 @@ export const Container = styled.div`
  
 
 export const ProductImage = styled.div`
-    width: 30rem;
-    height: 32rem;
+    width: 32rem;
+    height: 30rem;
     border-radius: 1.6rem;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@ export const ProductImage = styled.div`
     overflow: hidden;
 
     img{
-        height: 20rem;
+        height: 18rem;
         -webkit-box-reflect:below 0px linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0,0.3));
     }
 

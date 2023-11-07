@@ -1,11 +1,11 @@
 import { Container } from "./CategoryCard_Styles";
 
-export default function CategoryCard({urlImage, name}: ICategoryCard) {
+export default function CategoryCard({ urlImage, name, path}: ICategoryCard) {
     return (
-        <Container>
-            <img className="categoryCardImg" src={urlImage}/>
-            <div className="gradient"></div>
-            <p className="categoryCardText">{name}</p>
+        <Container to={path} onClick={() => window.scrollTo(0,0)}>
+                <img className="categoryCardImg" src={urlImage} />
+                <div className="gradient"></div>
+                <p className="categoryCardText">{name}</p>
         </Container>
     )
 }
@@ -13,5 +13,6 @@ export default function CategoryCard({urlImage, name}: ICategoryCard) {
 
 type ICategoryCard = {
     urlImage: string,
-    name: string
+    name: string,
+    path: string
 }

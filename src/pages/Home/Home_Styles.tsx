@@ -78,9 +78,10 @@ export const Newsletter = styled.div`
 
         .newsletterInput{
             font-size: 2.4rem;
-            border: 5px solid #8858ED;
+            border: 4px solid #8858ED;
+            border-radius: 1rem;
             margin-bottom: 2rem;
-            padding: 0.8rem;
+            padding: 0.8rem 0.8rem 0.8rem 1.6rem;
 
         }
     }
