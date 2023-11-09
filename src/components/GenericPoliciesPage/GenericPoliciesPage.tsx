@@ -2,10 +2,10 @@ import { Divider } from "@mui/material";
 import { PageTitle } from "../Generic_Styles";
 import { Container } from "./GenericPoliciesPage_Styles";
 
-export default function GeneriPoliciesPage({texts_1, texts_2}: IGenericPolicies) {
+export default function GeneriPoliciesPage({title, texts_1, texts_2}: IGenericPolicies) {
     return (
         <Container>
-            <PageTitle className="rose">Termos e Condições</PageTitle>
+            <PageTitle>{title}</PageTitle>
 
             <div className="content_Container">
 
@@ -18,7 +18,7 @@ export default function GeneriPoliciesPage({texts_1, texts_2}: IGenericPolicies)
                 </div>
 
                 <div className="content_2">
-                    {texts_2.map((text) => (
+                    {texts_2?.map((text) => (
                         <p className="content_text">
                             {text}
                         </p>
@@ -43,7 +43,8 @@ export default function GeneriPoliciesPage({texts_1, texts_2}: IGenericPolicies)
 }
 
 type IGenericPolicies = {
+    title: string
     texts_1: string[],
-    texts_2: string[]
+    texts_2?: string[]
 }
 

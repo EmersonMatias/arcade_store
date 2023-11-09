@@ -4,7 +4,7 @@ import { Container } from "./TermsAndConditions_Styles"
 export default function TermsAndConditionsPage(){
     return(
         <Container>
-            <GeneriPoliciesPage texts_1={texts_1} texts_2={texts_2}/>
+            <GeneriPoliciesPage title="Termos e Condições" texts_1={texts_1} texts_2={texts_2}/>
         </Container>
     )
 }
