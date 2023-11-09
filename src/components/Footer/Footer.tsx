@@ -9,7 +9,7 @@ export default function Footer() {
     const columns = [
         { title: "Produtos", texts_paths: [{text:"Games", path:"games"}, {text:"Consoles", path: "consoles"}, {text:"Periféricos", path: "perifericos"}, {text:"Promoções", path: "promocoes"}] },
         { title: "Loja", texts: ["Rua Prates, 194 - Bom Retiro São Paulo - SP, 01121-000", "Seg. a Sex.: 9:00 às 21:00", "info@meusite.com", "(11) 3456-7890"] },
-        { title: "Políticas", texts_paths: [{text:"Termos e Condições", path:""}, {text:"Política de Envio", path: ""}, {text:"Política de Reembolso", path:""}, {text:"Política de Privacidade", path:""}, {text:"Política de Cookies", path: ""}, {text:"FAQ", path: ""}] }
+        { title: "Políticas", texts_paths: [{text:"Termos e Condições", path:"termosecondicoes"}, {text:"Política de Envio", path: ""}, {text:"Política de Reembolso", path:""}, {text:"Política de Privacidade", path:""}, {text:"Política de Cookies", path: ""}, {text:"FAQ", path: ""}] }
     ]
 
     return (
