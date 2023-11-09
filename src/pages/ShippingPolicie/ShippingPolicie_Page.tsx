@@ -4,7 +4,7 @@ import { Container } from "./ShippingPolicie_Style";
 export default function ShippingPolicie_Page(){
     return(
         <Container>
-            <GeneriPoliciesPage title="Política de Envio" texts_1={text_1}/>
+            <GeneriPoliciesPage title="POLÍTICA DE ENVIO" texts_1={text_1}/>
         </Container>
     )
 }

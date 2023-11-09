@@ -10,6 +10,7 @@ import BestSellers_Page from "../pages/BestSellers/BestSellers_Page";
 import Contact_Page from "../pages/Contact/Contact_Page";
 import TermsAndConditionsPage from "../pages/TermsAndConditions/TermsAndConditions_Page";
 import ShippingPolicie_Page from "../pages/ShippingPolicie/ShippingPolicie_Page";
+import RefundPolicie_Page from "../pages/RefundPolicie/RefundPolicie_Page";
 
 
 export const router = createBrowserRouter(
@@ -25,6 +26,8 @@ export const router = createBrowserRouter(
             <Route path="contatos" element={<Contact_Page/>}/>
             <Route path="termosecondicoes" element={<TermsAndConditionsPage/>}/>
             <Route path="politicadeenvio" element={<ShippingPolicie_Page/>}/>
+            <Route path="politicadereembolso" element={<RefundPolicie_Page/>}/>
+
         </Route>
     )
 )
