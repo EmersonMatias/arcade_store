@@ -11,6 +11,7 @@ import Contact_Page from "../pages/Contact/Contact_Page";
 import TermsAndConditionsPage from "../pages/TermsAndConditions/TermsAndConditions_Page";
 import ShippingPolicie_Page from "../pages/ShippingPolicie/ShippingPolicie_Page";
 import RefundPolicie_Page from "../pages/RefundPolicie/RefundPolicie_Page";
+import PrivaciPolicie_Page from "../pages/PrivacyPolicie/PrivacyPolicie_Page";
 
 
 export const router = createBrowserRouter(
@@ -27,6 +28,7 @@ export const router = createBrowserRouter(
             <Route path="termosecondicoes" element={<TermsAndConditionsPage/>}/>
             <Route path="politicadeenvio" element={<ShippingPolicie_Page/>}/>
             <Route path="politicadereembolso" element={<RefundPolicie_Page/>}/>
+            <Route path="politicadeprivacidade" element={<PrivaciPolicie_Page/>}/>
 
         </Route>
     )
