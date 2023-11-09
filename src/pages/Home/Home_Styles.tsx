@@ -9,7 +9,7 @@ const Container = styled.div`
 
 export const Banner = styled.div`
     width: 100%;
-    height: 45rem;
+    height: 55rem;
     overflow: hidden;
     display: flex;
     align-items: center;

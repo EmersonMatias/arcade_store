@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 0 0.8rem;
     display: flex;
     color: #FFFFFF;
@@ -26,6 +26,8 @@ export const Container = styled.div`
 export const StyledNavLink = styled(NavLink)`
     color: #FFFFFF;
     text-decoration: none;
+  
+    
 
     &:hover{
         color: #baa6e5;

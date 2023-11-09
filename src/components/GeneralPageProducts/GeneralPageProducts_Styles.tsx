@@ -8,13 +8,6 @@ export const Container = styled.div`
     .mainContainer{
         display: flex;
     }
-
-    .title{
-        font-size: 8rem;
-        padding: 8rem 0rem;
-        font-weight: bold;
-        color: #FFFFFF;
-    }
 `
 
 

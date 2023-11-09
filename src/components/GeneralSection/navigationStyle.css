@@ -1,13 +1,13 @@
 .swiper-button-prev,.swiper-button-next {
     color: #ffffff; /* Substitua #ff0000 pelo código de cor desejado */
-    top: 40%;
+    top: 30%;
   }
 
   .swiper-button-prev{
-    left: 2%;
+    left: 0%;
   }
   .swiper-button-next{
-    right: 3%;
+    right: 0%;
   }
 
-  /* Estilize o botão de navegação seguinte */
+

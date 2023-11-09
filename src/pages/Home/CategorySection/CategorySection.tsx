@@ -1,5 +1,5 @@
 import CategoryCard from "../../../components/CategoryCard/CategoryCard";
-import { H2Section } from "../../../components/General_Styles";
+import { H2Section } from "../../../components/Generic_Styles";
 import { Container } from "./CategorySection_Styles";
 
 export default function CategorySection(){

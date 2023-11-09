@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css"
 import "swiper/css/navigation"
-import { H2Section } from "../General_Styles";
+import { H2Section } from "../Generic_Styles";
 import "./navigationStyle.css"
 
 export default function GeneralSection({ name, products }: IGeneralSection) {
@@ -19,15 +19,14 @@ export default function GeneralSection({ name, products }: IGeneralSection) {
             </div>
 
             <Swiper 
-                spaceBetween={40}
                 modules={[Navigation, Pagination]}
                 loop={true} cssMode={true}
-                slidesPerView={3}
-                autoplay={{ delay: 1000 }}
+                slidesPerView={4}
                 navigation={{ enabled: true }}
+                spaceBetween={-40}
             >
                 {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
-                    <SwiperSlide>
+                    <SwiperSlide >
                         <Product
                             id={id}
                             category={category}

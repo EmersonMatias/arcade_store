@@ -8,6 +8,7 @@ import Consoles_Page from "../pages/Consoles/Consoles_Page";
 import Peripherals_Page from "../pages/Peripherals/Peripherals_Page";
 import BestSellers_Page from "../pages/BestSellers/BestSellers_Page";
 import Contact_Page from "../pages/Contact/Contact_Page";
+import GeneriPoliciesPage from "../components/GenericPoliciesPage/GenericPoliciesPage";
 
 
 export const router = createBrowserRouter(
@@ -21,7 +22,7 @@ export const router = createBrowserRouter(
             <Route path="perifericos" element={<Peripherals_Page/>} />
             <Route path="maisvendidos" element={<BestSellers_Page/>} />
             <Route path="contatos" element={<Contact_Page/>}/>
-
+            <Route path="termosecondicoes" element={<GeneriPoliciesPage/>}/>
         </Route>
     )
 )

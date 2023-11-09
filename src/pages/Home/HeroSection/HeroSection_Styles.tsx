@@ -10,11 +10,11 @@ export const Container = styled.div`
     background-size: cover;
 
     .promotionCard{
-        width: 56rem;
+        width: 70rem;
         border-radius: 2.4rem;
-        top: 16rem;
+        top: 20rem;
         left: 16rem;
-        padding: 2.4rem 4.8rem;
+        padding: 4.8rem 4.8rem;
         position: absolute;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         backdrop-filter: blur(30px);
@@ -23,34 +23,32 @@ export const Container = styled.div`
         border:1px solid rgba(255, 255, 255, 0.18);
         box-shadow: rgb(16, 1, 14) 0px 20px 30px;
 
-
         .commomPhrase{
-            font-size: 3.2rem;
-            margin-bottom: 1.6rem;
+            font-size: 4rem;
+            margin-bottom: 3.2rem;
         }
 
         .gameTitle{
-            font-size: 7.2rem;
+            font-size: 8rem;
             margin-bottom: 1.6rem;
             font-weight: bold;
         }
 
         .streamings{
-            font-size: 2.4rem;
-            margin-bottom: 1.6rem;
+            font-size: 3.2rem;
+            margin-bottom: 3.2rem;
         }
     }
 
     .gameCover{
         position: absolute;
         right: 16rem;
-        top: 16rem;
+        top: 20rem;
         
         img{
             border-radius: 4rem;
-            width: 48rem;
-            height: 62rem;
-            box-shadow: rgb(255, 255, 255,0.3) 0px 0px 50px 1px;
+            width: 68rem;
+            height: 82rem;
         }
     }
 `

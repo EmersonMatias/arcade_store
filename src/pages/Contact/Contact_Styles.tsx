@@ -51,9 +51,13 @@ export const Container = styled.div`
 
                 input{
                     border: 4px solid #8858ED;
-                    margin-bottom: 1.6rem;
+                    margin-bottom: 2rem;
                     padding: 0.8rem 0.8rem 0.8rem 1.6rem;
-                    
+                    border-radius: 1rem;
+                }
+
+                .sendButton{
+                    margin-top: 2rem;
                 }
             }
            

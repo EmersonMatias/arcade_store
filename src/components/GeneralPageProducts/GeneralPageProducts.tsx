@@ -2,12 +2,14 @@ import { AxiosResponse } from "axios";
 import Product, { IProduct } from "../Product/Product";
 import { Container, ProductsContainer } from "./GeneralPageProducts_Styles";
 import Sidebar from "./Sidebar/Sidebar";
+import { PageTitle } from "../Generic_Styles";
 
 
 export default function GeneralPageProducts({products, title}: IGeneralPageProducts) {
     return (
         <Container>
-            <h2 className="title">{title}</h2>
+            <PageTitle>{title}</PageTitle>
+            
             <main className="mainContainer">
                 <Sidebar />
                 <ProductsContainer>

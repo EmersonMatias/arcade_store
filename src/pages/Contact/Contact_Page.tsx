@@ -32,7 +32,7 @@ export default function Contact_Page(){
                     <label htmlFor="message">Envie uma mensagem</label>
                     <input id="message" type="text" placeholder="Envie uma mensagem"/>
 
-                    <PurpleButton  name="Enviar"/>
+                    <PurpleButton className="sendButton" name="Enviar"/>
                     </form>
                 </div>
             </main>

@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    padding: 16rem 16rem 8rem 16rem;
+    padding: 24rem 16rem 8rem 16rem;
     background-color: #060506;
     color: #FFFFFF;
 
     .bestSellerTop{
         display: flex;
         justify-content: space-between;
-        margin-bottom: 4rem;
+        margin-bottom: 8rem;
     }
 
     .bestSellerTitle{

@@ -1,8 +1,8 @@
 import { Container } from "./PurpleButton_Styles";
 
-export default function PurpleButton({name, onClick}: IPurpleButton){
+export default function PurpleButton({name, onClick, className}: IPurpleButton){
     return(
-        <Container onClick={onClick}>
+        <Container className={className} onClick={onClick}>
             {name}
         </Container>
     )
@@ -11,5 +11,6 @@ export default function PurpleButton({name, onClick}: IPurpleButton){
 
 type IPurpleButton = {
     name: string,
-    onClick?: React.MouseEventHandler<HTMLButtonElement>
+    onClick?: React.MouseEventHandler<HTMLButtonElement>,
+    className?: string
 }

@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 export const Container = styled.header`
     width: 100%;
-    height: 8rem;
-    padding: 0 8rem;
+    height: 10rem;
+    padding: 0 12rem;
     display: flex;
     position: absolute;
     top: 0;
@@ -22,11 +22,11 @@ export const Logo = styled(NavLink)`
 
 
     .iconLogo{
-        font-size: 4rem;
+        font-size: 4.8rem;
     }
 
     .phraseLogo{
-        font-size: 3.2rem;
+        font-size: 2.2rem;
         font-weight: bold;
         margin-left: 1.6rem;
     }
