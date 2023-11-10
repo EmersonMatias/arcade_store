@@ -37,8 +37,8 @@ export const Container = styled.div`
 
         .forms_Container{
             width: 50%;
-            font-size: 2.4rem;
-            padding: 0 8rem;
+            font-size: 1.6rem;
+            padding: 0 16rem;
 
             form{
                 display: flex;
@@ -46,7 +46,7 @@ export const Container = styled.div`
 
                 label{
                     margin-bottom: 0.8rem;
-                    font-weight: 100;
+                    font-weight: 900;
                 }
 
                 input{
@@ -58,6 +58,7 @@ export const Container = styled.div`
 
                 .sendButton{
                     margin-top: 2rem;
+                    padding: 2rem 0;
                 }
             }
            

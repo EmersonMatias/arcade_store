@@ -12,14 +12,22 @@ import TermsAndConditionsPage from "../pages/TermsAndConditions/TermsAndConditio
 import ShippingPolicie_Page from "../pages/ShippingPolicie/ShippingPolicie_Page";
 import RefundPolicie_Page from "../pages/RefundPolicie/RefundPolicie_Page";
 import PrivaciPolicie_Page from "../pages/PrivacyPolicie/PrivacyPolicie_Page";
+import Product_Page from "../pages/Product/Product_Page";
 
 
 export const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<Home_Layout/>}>
             <Route index element={<Home_Page />} />
+
             <Route path="produtos" element={<Products_Page/>} />
+            <Route path="produtos/:id" element={<Product_Page/>}/>
+            
+            
             <Route path="promocoes" element={<Promotions_Page/>} />
+            <Route path="promocoes/:id" element={<Product_Page/>}/>
+
+
             <Route path="games" element={<Games_Page/>} />
             <Route path="consoles" element={<Consoles_Page/>} />
             <Route path="perifericos" element={<Peripherals_Page/>} />
