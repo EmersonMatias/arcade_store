@@ -1,6 +1,7 @@
 import WhiteButton from "../../../components/WhiteButton/WhiteButton";
 import { Container } from "./HeroSection_Styles";
 import GameCover from "../../../assets/gameCover.png"
+import { ScrollToTop } from "../../../utils/functions";
 
 export default function HeroSection() {
     return (
@@ -9,7 +10,7 @@ export default function HeroSection() {
                 <p className="commomPhrase">Mais poder ao seu gaming</p>
                 <h3 className="gameTitle">CYBER KID INFINITE</h3>
                 <p className="streamings">Disponivel para PC e Console</p>
-                <WhiteButton name="Comprar agora" />
+                <WhiteButton name="Comprar agora" path="games" onClick={ScrollToTop}/>
             </div>
 
             <div className="gameCover">

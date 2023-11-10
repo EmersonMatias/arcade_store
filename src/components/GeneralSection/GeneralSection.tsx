@@ -8,17 +8,18 @@ import "swiper/css"
 import "swiper/css/navigation"
 import { H2Section } from "../Generic_Styles";
 import "./navigationStyle.css"
+import { ScrollToTop } from "../../utils/functions";
 
-export default function GeneralSection({ name, products }: IGeneralSection) {
+export default function GeneralSection({ name, products, path }: IGeneralSection) {
 
     return (
         <Container>
             <div className="bestSellerTop">
                 <H2Section>{name}</H2Section>
-                <WhiteButton name="Ver tudo" />
+                <WhiteButton name="Ver tudo" path={path} onClick={ScrollToTop} />
             </div>
 
-            <Swiper 
+            <Swiper
                 modules={[Navigation, Pagination]}
                 loop={true} cssMode={true}
                 slidesPerView={4}
@@ -45,5 +46,6 @@ export default function GeneralSection({ name, products }: IGeneralSection) {
 
 type IGeneralSection = {
     name: string,
-    products: AxiosResponse<IProduct[]> | undefined
+    products: AxiosResponse<IProduct[]> | undefined,
+    path: string
 }

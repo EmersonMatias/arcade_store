@@ -1,8 +1,8 @@
 import { Container } from "./WhiteButton_Styles";
 
-export default function WhiteButton({name , onClick}: IWhiteButton){
+export default function WhiteButton({name, onClick, path }: IWhiteButton){
     return(
-        <Container onClick={onClick}>
+        <Container onClick={onClick} to={path}>
             {name}
         </Container>
     )
@@ -10,5 +10,6 @@ export default function WhiteButton({name , onClick}: IWhiteButton){
 
 type IWhiteButton = {
     name: string,
-    onClick?: React.MouseEventHandler<HTMLButtonElement>
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>
+    path: string
 }

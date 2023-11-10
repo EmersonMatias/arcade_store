@@ -22,6 +22,9 @@ export const router = createBrowserRouter(
 
 
             <Route index element={<Home_Page />} />
+            <Route path=":id" element={<Product_Page />}/>
+
+
 
             <Route path="produtos" element={<Products_Page />} />
             <Route path="produtos/:id" element={<Product_Page />}/>

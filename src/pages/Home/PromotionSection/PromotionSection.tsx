@@ -1,18 +1,11 @@
-import { useQuery } from "@tanstack/react-query";
 import GeneralSection from "../../../components/GeneralSection/GeneralSection";
 import WhiteButton from "../../../components/WhiteButton/WhiteButton";
 import { Container, PromotionContainer, PromotionImgContainer } from "./PromotionSection_Styles";
-import { IProduct } from "../../../components/Product/Product";
-import axios, { AxiosResponse } from "axios";
+import { ScrollToTop } from "../../../utils/functions";
+import useProductsQuery from "../../../hooks/useProductsQuery";
 
 export default function PromotionSection() {
-    const { data: products } = useQuery({
-        queryKey: ["products"],
-        queryFn: async () => {
-            const response: AxiosResponse<IProduct[]> = (await axios.get("http://localhost:4000/products"))
-            return response
-        }
-    })
+    const {data: periferico} = useProductsQuery("category=periferico")
     
     const promotions = [
         {
@@ -38,11 +31,11 @@ export default function PromotionSection() {
                 <div className="promotionCard">
                     <p className="commomPhrase">A BOA DA SEMANA</p>
                     <p className="gameTitle"><span className="gameTitle1">10%</span><br /> off em games</p>
-                    <WhiteButton name="Comprar agora" />
+                    <WhiteButton name="Comprar agora" path="games" onClick={ScrollToTop}/>
                 </div>
             </PromotionContainer>
 
-            <GeneralSection name="DÊ UM UPGRADE NO SEU SETUP" products={products}/>
+            <GeneralSection name="DÊ UM UPGRADE NO SEU SETUP" products={periferico} path="perifericos"/>
         </Container>
     )
 }
