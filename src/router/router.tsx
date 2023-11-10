@@ -24,17 +24,29 @@ export const router = createBrowserRouter(
             <Route index element={<Home_Page />} />
 
             <Route path="produtos" element={<Products_Page />} />
-            <Route path="produtos/:id" element={<Product_Page />} />
+            <Route path="produtos/:id" element={<Product_Page />}/>
 
 
             <Route path="promocoes" element={<Promotions_Page />} />
-            <Route path="promocoes/:id" element={<Product_Page />} />
+            <Route path="promocoes/:id" element={<Product_Page />}/>
 
 
             <Route path="games" element={<Games_Page />} />
+            <Route path="games/:id" element={<Product_Page />}/>
+
+
             <Route path="consoles" element={<Consoles_Page />} />
+            <Route path="consoles/:id" element={<Product_Page />}/>
+
+
             <Route path="perifericos" element={<Peripherals_Page />} />
+            <Route path="perifericos/:id" element={<Product_Page />}/>
+
+
             <Route path="maisvendidos" element={<BestSellers_Page />} />
+            <Route path="maisvendidos/:id" element={<Product_Page />}/>
+
+            
             <Route path="contatos" element={<Contact_Page />} />
             <Route path="termosecondicoes" element={<TermsAndConditionsPage />} />
             <Route path="politicadeenvio" element={<ShippingPolicie_Page />} />
