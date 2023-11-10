@@ -10,7 +10,7 @@ export const Container = styled.header<IHeader>`
     top: 0;
     justify-content: space-between;
     //background: linear-gradient(180deg, rgba(89,15,98,1) 0%, rgba(38,17,73,1) 100%);
-    background: linear-gradient(180deg, #3d1d42 0%, #3b2263 100%);
+    background: ${props => props.pathname === "/" ? "linear-gradient(180deg, #3d1d42 0%, #3b2263 100%)" : "#060506"};
 
     color: #FFFFFF;
 `
