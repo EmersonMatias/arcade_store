@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const Container = styled.header`
+export const Container = styled.header<IHeader>`
     width: 100%;
     height: 12rem;
     padding: 0 12rem;
@@ -9,8 +9,9 @@ export const Container = styled.header`
     position: absolute;
     top: 0;
     justify-content: space-between;
-    background: rgb(89,15,98);
-    background: linear-gradient(180deg, rgba(89,15,98,1) 0%, rgba(38,17,73,1) 100%);
+    //background: linear-gradient(180deg, rgba(89,15,98,1) 0%, rgba(38,17,73,1) 100%);
+    background: linear-gradient(180deg, #3d1d42 0%, #3b2263 100%);
+
     color: #FFFFFF;
 `
 
@@ -42,3 +43,8 @@ export const NavBar = styled.div`
         margin-left: 2.4rem;
     }
 `
+
+
+type IHeader = {
+    pathname: string
+}
