@@ -1,5 +1,5 @@
 import { Container, LeftContainer, RightContainer } from "./Product_Styles";
-import { ProductImage } from "../../components/Product/Product_Styles";
+import { ProductImageBackground } from "../../components/Product/Product_Styles";
 import PurpleButton from "../../components/PurpleButton/PurpleButton";
 import { ThemeProvider, ListItemButton, ListItemText, Collapse, List, createTheme, Divider } from "@mui/material";
 import ExpandLess from '@mui/icons-material/ExpandLess';
@@ -27,9 +27,9 @@ export default function Product_Page() {
         <Container>
 
             <LeftContainer>
-                <ProductImage className="leftImg">
+                <ProductImageBackground className="leftImg">
                     <img src={product?.productImage} />
-                </ProductImage>
+                </ProductImageBackground>
                 <div className="leftDescription">
                     Sou uma descrição do produto. Este é um ótimo lugar para "vender" seu produto e chamar a atenção dos visitantes.
                     Descreva seu produto de forma clara e concisa, use palavras-chave exclusivas e mostre seu diferencial.
@@ -44,7 +44,7 @@ export default function Product_Page() {
                 </h3>
 
                 <div className="productPrice">
-                    {product?.price}
+                   R$ {product?.price}
                 </div>
 
 

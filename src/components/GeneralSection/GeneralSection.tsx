@@ -27,7 +27,7 @@ export default function GeneralSection({ name, products, path }: IGeneralSection
                 spaceBetween={-40}
             >
                 {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
-                    <SwiperSlide >
+                    <SwiperSlide key={id}>
                         <Product
                             id={id}
                             category={category}
@@ -35,6 +35,7 @@ export default function GeneralSection({ name, products, path }: IGeneralSection
                             price={price.toString()}
                             productImage={productImage}
                             promotion={promotion}
+                            size="small"
                         />
                     </SwiperSlide>
                 ))}

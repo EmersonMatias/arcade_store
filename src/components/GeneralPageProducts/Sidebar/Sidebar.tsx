@@ -48,7 +48,7 @@ export default function Sidebar() {
                 <Collapse in={categoryState} unmountOnExit>
                     <List component="div" disablePadding>
                         {categories.map((categorie) => (
-                            <ListItemButton sx={{ pl: 4 }}>
+                            <ListItemButton sx={{ pl: 4 }} key={categorie}>
                                 <ListItemText primary={categorie} />
                             </ListItemButton>
                         ))}

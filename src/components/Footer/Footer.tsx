@@ -20,7 +20,7 @@ export default function Footer() {
                     <h5 className="iconTitle">Arcade</h5>
                 </div>
                 {columns.map(({ title, texts, texts_paths  }) => (
-                    <ColumnTexts title={title} texts={texts} texts_paths={texts_paths}/>
+                    <ColumnTexts title={title} texts={texts} texts_paths={texts_paths} key={title}/>
                 ))}
             </TopFooter>
 

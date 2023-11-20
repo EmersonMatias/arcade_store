@@ -11,6 +11,4 @@ export const Container = styled.div`
         margin-top: 1.6rem;
         font-weight: 100;
     }
-
-
 `

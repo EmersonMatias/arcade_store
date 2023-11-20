@@ -14,14 +14,15 @@ export default function GeneralPageProducts({products, title}: IGeneralPageProdu
                 <Sidebar />
                 <ProductsContainer>
                     {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
-
                         <Product
+                            key={id}
                             id={id}
                             category={category}
                             name={name}
                             price={price.toString()}
                             productImage={productImage}
                             promotion={promotion}
+                            size="normal"
                         />
 
                     ))}

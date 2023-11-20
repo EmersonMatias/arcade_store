@@ -23,7 +23,7 @@ export default function PromotionSection() {
         <Container>
             <PromotionContainer>
                 {promotions.map(({top,right,url}) => (
-                    <PromotionImgContainer top={top} right={right}>
+                    <PromotionImgContainer top={top} right={right} key={url}>
                         <img className="promotionImg" src={url}/>
                     </PromotionImgContainer>
                 ))}

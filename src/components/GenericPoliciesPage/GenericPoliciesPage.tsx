@@ -11,7 +11,7 @@ export default function GeneriPoliciesPage({title, texts_1, texts_2}: IGenericPo
 
                 <div className="content_1">
                     {texts_1.map((text) => (
-                        <p className="content_text">
+                        <p className="content_text" key={text}>
                             {text}
                         </p>
                     ))}
@@ -19,7 +19,7 @@ export default function GeneriPoliciesPage({title, texts_1, texts_2}: IGenericPo
 
                 <div className="content_2">
                     {texts_2?.map((text) => (
-                        <p className="content_text">
+                        <p className="content_text" key={text}>
                             {text}
                         </p>
                     ))}

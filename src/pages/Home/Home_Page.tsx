@@ -8,17 +8,61 @@ import PromotionSection from "./PromotionSection/PromotionSection";
 import NewsletterBackground from "../../assets/newsletterBackground.jpg"
 import { ScrollToTop } from "../../utils/functions";
 import useProductsQuery from "../../hooks/useProductsQuery";
+import { useSelector, useDispatch } from "react-redux"
+import store from "../../redux/store";
 
 export default function Home_Page() {
-  const {data: games} = useProductsQuery("category=game")
-  const {data: products} = useProductsQuery("")
+  const { data: games } = useProductsQuery("category=game")
+  const { data: products } = useProductsQuery("")
+  const { cartList } = useSelector(rootReducer => rootReducer.cartReducer)
+  const { test } = useSelector(rootReducer => rootReducer.testReducer)
+
+  const dispatch = useDispatch()
+
+  function largura() {
+    const larguraTela = window.innerWidth;
+    const alturadaTela = window.innerHeight;
+    //923
+    console.log("A largura da sua tela é: " + larguraTela + " pixels");
+    console.log("A largura da sua tela é: " + alturadaTela + " pixels");
+  }
+  largura()
+  console.log(cartList)
+  console.log(test)
 
   return (
     <Container>
 
       <HeroSection />
 
-      <GeneralSection name="MAIS VENDIDOS" products={products} path="maisvendidos"/>
+
+      <button
+        style={{ backgroundColor: "red" }}
+        onClick={() => {
+          dispatch({
+            type: "cart/add",
+            payload: "jogo 4"
+          })
+        }}
+      >Cart
+      </button>
+      <button
+        style={{ backgroundColor: "red" }}
+        onClick={() => {
+          dispatch({
+            type: "test/add",
+            payload: "teste 4"
+          })
+        }}
+      >Teste
+      </button>
+      <select name="select" >
+        <option value="valor1">Valor 1</option>
+        <option value="valor2" selected>Valor 2</option>
+        <option value="valor3">Valor 3</option>
+      </select>
+
+      <GeneralSection name="MAIS VENDIDOS" products={products} path="maisvendidos" />
 
       <CategorySection />
 
@@ -30,11 +74,11 @@ export default function Home_Page() {
         <div className="bannerContent">
           <h3 className="bannerContentTitle">GASTE E GANHE</h3>
           <p className="bannerContentText">Economize 20% ao gastar mais de R$ 500,00</p>
-          <WhiteButton name="Comprar agora" path="produtos" onClick={ScrollToTop}/>
+          <WhiteButton name="Comprar agora" path="produtos" onClick={ScrollToTop} />
         </div>
       </Banner>
 
-      <GeneralSection name="GAMES EM ALTA" products={games} path="games"/>
+      <GeneralSection name="GAMES EM ALTA" products={games} path="games" />
 
       <Newsletter>
         <img className="newsletterImg" src={NewsletterBackground} />
@@ -43,7 +87,7 @@ export default function Home_Page() {
           <h3 className="newsletterContentTitle">Newsletter</h3>
           <p className="newsletterContentText">Assine e receba atualizações sobre novos produtos e ofertas especiais</p>
           <input className="newsletterInput" placeholder="Email" />
-          <WhiteButton name="Enviar" path=""/>
+          <WhiteButton name="Enviar" path="" />
         </div>
       </Newsletter>
 

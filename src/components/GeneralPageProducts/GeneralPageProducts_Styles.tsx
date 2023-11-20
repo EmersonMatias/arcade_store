@@ -13,7 +13,7 @@ export const Container = styled.div`
 
 export const ProductsContainer = styled.div`
     width: 85%;
-    padding: 4rem 0;
+    padding: 6rem 0rem;
     place-items: center;
     display: grid;
     grid-row-gap: 4rem;

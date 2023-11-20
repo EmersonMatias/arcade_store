@@ -8,11 +8,11 @@ export default function ColumnTexts({ title, texts, texts_paths }: IColumnTexts)
             <h6 className="columnTextsTitle">{title}</h6>
             
             {texts && texts.map((text) => (
-                <p className="columnTextsText">{text}</p>
+                <p className="columnTextsText" key={text}>{text}</p>
             ))}
 
             {texts_paths && texts_paths.map(({ text, path }) => (
-                <NavLinkNoStyle to={path} onClick={ScrollToTop}>
+                <NavLinkNoStyle to={path} onClick={ScrollToTop} key={text}>
                     <p className="columnTextsText">{text}</p>
                 </NavLinkNoStyle>
             ))}
