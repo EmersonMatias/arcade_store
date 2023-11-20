@@ -20,7 +20,7 @@ export const Container = styled.div<TProductComponent>`
     .productName, .productPrice{
         font-size: 2.4rem;
         font-weight: bold;
-        width: 43rem;
+        width: ${props => props.size === "normal" ? "43rem" : "32rem"};
         text-align: center;
         color: #FFFFFF;
     }
