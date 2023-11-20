@@ -53,15 +53,8 @@ table {
 }
 
 html{
-		font-size: 62.5%;
 		font-family: 'Roboto', sans-serif;	
 }
 
-@media screen and (max-width: 1200px) {
-	html{
-		font-size: 30%;
-
-	}
-}
 `
 export default Global_Style
