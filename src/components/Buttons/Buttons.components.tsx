@@ -22,12 +22,19 @@ export const WhiteButton = styled(Button)`
 
 export const ButtonNavLink = styled(NavLink)`
     width:fit-content ;
+    height: fit-content ;
     font-size: ${props => props.theme.fonts.p};
     padding: ${props => props.theme.size.px16} ${props => props.theme.size.px40};
     border-radius: ${props => props.theme.size.px32};
+    gap: ${props => props.theme.size.px16};
     font-weight: bold;
     border: none;
     text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
 `
 
 export const WhiteButtonNavLink = styled(ButtonNavLink)`

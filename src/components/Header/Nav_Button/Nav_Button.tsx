@@ -1,6 +1,8 @@
-import { Container, PoppoverContainer, StyledNavLink } from "./Nav_Button.Styles";
+import { Container, PoppoverContainer} from "./Nav_Button.Styles";
 import { IconType } from "react-icons"
 import { ReactElement, useState } from "react";
+import { ButtonNavLink} from "../../Buttons/Buttons.components";
+import { Heading6, Heading6Unbold } from "../../Headings/Headings.components";
 
 export default function Nav_Button({ title, path, icon }: INav_Button) {
     const [poppoverVisibility, setPoppoverVisibility] = useState(false)
@@ -31,20 +33,18 @@ export default function Nav_Button({ title, path, icon }: INav_Button) {
 
     return (
         <Container>
-            <StyledNavLink to={path}>
-                <div className="conta" onMouseOver={() => handleMouseOver()} onMouseLeave={() => handleMouseLeave()}>
-                    {icon}
-                    <p>{title}</p>
-                </div>
-            </StyledNavLink>
+            <ButtonNavLink to={path} onMouseOver={() => handleMouseOver()} onMouseLeave={() => handleMouseLeave()}>
+              {icon && <span className="navButtonIcon">{icon}</span>}
+               {title &&  <Heading6>{title}</Heading6>}
+            </ButtonNavLink>
 
 
             {poppoverVisibility && title === "Produtos" &&
                 <PoppoverContainer className="poppover" onMouseOver={() => { handleMouseOverPoppover() }} onMouseLeave={() => handleMouseLeavePoppoer()}>
-                    <StyledNavLink to="maisvendidos" className="poppoverParagraph">Mais vendidos</StyledNavLink>
-                    <StyledNavLink to="games" className="poppoverParagraph">Games</StyledNavLink>
-                    <StyledNavLink to="consoles" className="poppoverParagraph">Consoles</StyledNavLink>
-                    <StyledNavLink to="perifericos" className="poppoverParagraph">Periféricos</StyledNavLink>
+                    <ButtonNavLink to="maisvendidos" style={{fontWeight: "normal"}}><Heading6Unbold>Mais vendidos</Heading6Unbold></ButtonNavLink>
+                    <ButtonNavLink to="games" style={{fontWeight: "normal"}}><Heading6Unbold>Games</Heading6Unbold></ButtonNavLink>
+                    <ButtonNavLink to="consoles" style={{fontWeight: "normal"}}><Heading6Unbold>Consoles</Heading6Unbold></ButtonNavLink>
+                    <ButtonNavLink to="perifericos" style={{fontWeight: "normal"}}><Heading6Unbold>Periféricos</Heading6Unbold></ButtonNavLink>
                 </PoppoverContainer>
             }
 
@@ -54,7 +54,7 @@ export default function Nav_Button({ title, path, icon }: INav_Button) {
 
 
 type INav_Button = {
-    title: string,
+    title?: string,
     path: string,
     icon?: ReactElement<IconType>
 }

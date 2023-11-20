@@ -27,6 +27,7 @@ export const theme: DefaultTheme = {
         px48: "3rem",
         px80: "5rem",
         px40: "2.5rem",
+        px120: "7.5rem",
         px160: "10rem",
         px200: "12.5rem",
         px680: "42.5rem",

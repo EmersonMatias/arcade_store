@@ -3,45 +3,37 @@ import styled from "styled-components";
 
 export const Container = styled.header<IHeader>`
     width: 100%;
-    height: 12rem;
-    padding: 0 12rem;
+    top: 0;
+    height: ${props => props.theme.size.px120};
+    padding: 0 ${props => props.theme.size.px120};
     display: flex;
     position: absolute;
-    top: 0;
     justify-content: space-between;
+    align-items: center;
     //background: linear-gradient(180deg, rgba(89,15,98,1) 0%, rgba(38,17,73,1) 100%);
-    background: ${props => props.pathname === "/" ? "linear-gradient(180deg, #3d1d42 0%, #3b2263 100%)" : "#060506"};
-
+    background: ${props => props.pathname === "/" ? "linear-gradient(180deg, #250b29 0%, #3b2263 100%)" : "#060506"};
     color: #FFFFFF;
 `
 
 export const Logo = styled(NavLink)`
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: #FFFFFF;
-
-
-    .iconLogo{
-        font-size: 4.8rem;
-    }
-
-    .phraseLogo{
-        font-size: 2.2rem;
-        font-weight: bold;
-        margin-left: 1.6rem;
+    gap: ${props => props.theme.size.px16};
+    
+    .logoIcon{
+        font-size: ${props => props.theme.size.px48}
     }
 `
 
 export const NavBar = styled.div`
     display: flex;
     align-items: center;
+    height: fit-content;
 
-    .iconCart{
-        cursor: pointer;
-        font-size: 4rem;
-        margin-left: 2.4rem;
-    }
 `
 
 

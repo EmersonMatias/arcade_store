@@ -30,11 +30,22 @@ export const Heading5 = styled.h5`
     font-weight: bold;
     line-height: ${props => props.theme.lineHeight.h5};
 `
+
+export const Heading5Unbold = styled.h5`
+    font-size: ${props => props.theme.fonts.h5};
+    line-height: ${props => props.theme.lineHeight.h5};
+`
 export const Heading6 = styled.h6`
     font-size: ${props => props.theme.fonts.h6};
     font-weight: bold;
     line-height: ${props => props.theme.lineHeight.h6};
 `
+
+export const Heading6Unbold = styled.h6`
+    font-size: ${props => props.theme.fonts.h6};
+    line-height: ${props => props.theme.lineHeight.h6};
+`
+
 
 export const Paragraph = styled.p`
     font-size: ${props => props.theme.fonts.p};
