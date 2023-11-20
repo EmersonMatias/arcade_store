@@ -1,5 +1,4 @@
 import Product, { IProduct } from "../Product/Product";
-import WhiteButton from "../WhiteButton/WhiteButton";
 import { Container } from "./GeneralSection_Styles";
 import { AxiosResponse } from "axios";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,6 +8,7 @@ import "swiper/css/navigation"
 import { H2Section } from "../Generic_Styles";
 import "./navigationStyle.css"
 import { ScrollToTop } from "../../utils/functions";
+import { WhiteButtonNavLink } from "../Buttons/Buttons.components";
 
 export default function GeneralSection({ name, products, path }: IGeneralSection) {
 
@@ -16,7 +16,7 @@ export default function GeneralSection({ name, products, path }: IGeneralSection
         <Container>
             <div className="bestSellerTop">
                 <H2Section>{name}</H2Section>
-                <WhiteButton name="Ver tudo" path={path} onClick={ScrollToTop} />
+                <WhiteButtonNavLink to={path} onClick={ScrollToTop}>Ver tudo</WhiteButtonNavLink>
             </div>
 
             <Swiper

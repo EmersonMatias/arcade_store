@@ -1,8 +1,8 @@
 import GeneralSection from "../../../components/GeneralSection/GeneralSection";
-import WhiteButton from "../../../components/WhiteButton/WhiteButton";
 import { Container, PromotionContainer, PromotionImgContainer } from "./PromotionSection_Styles";
 import { ScrollToTop } from "../../../utils/functions";
 import useProductsQuery from "../../../hooks/useProductsQuery";
+import { WhiteButtonNavLink } from "../../../components/Buttons/Buttons.components";
 
 export default function PromotionSection() {
     const {data: periferico} = useProductsQuery("category=periferico")
@@ -31,7 +31,7 @@ export default function PromotionSection() {
                 <div className="promotionCard">
                     <p className="commomPhrase">A BOA DA SEMANA</p>
                     <p className="gameTitle"><span className="gameTitle1">10%</span><br /> off em games</p>
-                    <WhiteButton name="Comprar agora" path="games" onClick={ScrollToTop}/>
+                    <WhiteButtonNavLink to="games" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
                 </div>
             </PromotionContainer>
 

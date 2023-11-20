@@ -16,27 +16,21 @@ export const Container = styled.div`
         left:${props => props.theme.size.px160};
         padding: ${props => props.theme.size.px48} ${props => props.theme.size.px48};
         position: absolute;
+        display: flex;
+        flex-direction: column;
         background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
         backdrop-filter: blur(30px);
         -webkit-backdrop-filter: blur(10px);
         border-radius: 20px;
         border:1px solid rgba(255, 255, 255, 0.18);
         box-shadow: rgb(16, 1, 14) 0px 20px 30px;
+
+
         .commomPhrase{
             font-size: ${props => props.theme.fonts.p};
             margin-bottom: 3.2rem;
         }
 
-        .gameTitle{
-            font-size: ${props => props.theme.fonts.h1};
-            margin-bottom: ${props => props.theme.size.px16};
-            font-weight: bold;
-        }
-
-        .streamings{
-            font-size: ${props => props.theme.fonts.h4};
-            margin-bottom: ${props => props.theme.size.px32};
-        }
     }
 
     .gameCover{

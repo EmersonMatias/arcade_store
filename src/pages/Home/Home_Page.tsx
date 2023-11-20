@@ -1,6 +1,5 @@
 
 import GeneralSection from "../../components/GeneralSection/GeneralSection";
-import WhiteButton from "../../components/WhiteButton/WhiteButton";
 import CategorySection from "./CategorySection/CategorySection";
 import HeroSection from "./HeroSection/HeroSection";
 import Container, { Banner, BlackShadow, Newsletter } from "./Home_Styles";
@@ -10,6 +9,7 @@ import { ScrollToTop } from "../../utils/functions";
 import useProductsQuery from "../../hooks/useProductsQuery";
 import { useSelector, useDispatch } from "react-redux"
 import store from "../../redux/store";
+import {WhiteButton, WhiteButtonNavLink } from "../../components/Buttons/Buttons.components";
 
 export default function Home_Page() {
   const { data: games } = useProductsQuery("category=game")
@@ -74,7 +74,7 @@ export default function Home_Page() {
         <div className="bannerContent">
           <h3 className="bannerContentTitle">GASTE E GANHE</h3>
           <p className="bannerContentText">Economize 20% ao gastar mais de R$ 500,00</p>
-          <WhiteButton name="Comprar agora" path="produtos" onClick={ScrollToTop} />
+          <WhiteButtonNavLink to="produtos" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
         </div>
       </Banner>
 
@@ -87,7 +87,7 @@ export default function Home_Page() {
           <h3 className="newsletterContentTitle">Newsletter</h3>
           <p className="newsletterContentText">Assine e receba atualizações sobre novos produtos e ofertas especiais</p>
           <input className="newsletterInput" placeholder="Email" />
-          <WhiteButton name="Enviar" path="" />
+          <WhiteButton>Enviar</WhiteButton>
         </div>
       </Newsletter>
 
