@@ -38,6 +38,9 @@ declare module 'styled-components' {
       px700: string
       px820: string,
 
+    },
+    colors: {
+      black: string
     }
 
   }

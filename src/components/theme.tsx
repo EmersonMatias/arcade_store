@@ -33,5 +33,8 @@ export const theme: DefaultTheme = {
         px680: "42.5rem",
         px820: "51.25rem",
         px700: "43.75rem"
+    },
+    colors:{
+        black: "#060506"
     }
 }

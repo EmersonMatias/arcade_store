@@ -8,7 +8,6 @@ import NewsletterBackground from "../../assets/newsletterBackground.jpg"
 import { ScrollToTop } from "../../utils/functions";
 import useProductsQuery from "../../hooks/useProductsQuery";
 import { useSelector, useDispatch } from "react-redux"
-import store from "../../redux/store";
 import {WhiteButton, WhiteButtonNavLink } from "../../components/Buttons/Buttons.components";
 
 export default function Home_Page() {
@@ -33,7 +32,7 @@ export default function Home_Page() {
   return (
     <Container>
 
-      <HeroSection />
+      <HeroSection products={products}/>
 
 
       <button
@@ -80,7 +79,7 @@ export default function Home_Page() {
 
       <GeneralSection name="GAMES EM ALTA" products={games} path="games" />
 
-      <Newsletter>
+      <Newsletter id="newsletter">
         <img className="newsletterImg" src={NewsletterBackground} />
         <BlackShadow />
         <div className="newsletterContent">

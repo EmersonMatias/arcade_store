@@ -1,10 +1,10 @@
-import { NavLink } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Button = styled.button`
     width:fit-content ;
     font-size: ${props => props.theme.fonts.p};
-    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px40};
+    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px32};
     border-radius: ${props => props.theme.size.px32};
     font-weight: bold;
     border: none;
@@ -24,7 +24,7 @@ export const ButtonNavLink = styled(NavLink)`
     width:fit-content ;
     height: fit-content ;
     font-size: ${props => props.theme.fonts.p};
-    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px40};
+    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px32};
     border-radius: ${props => props.theme.size.px32};
     gap: ${props => props.theme.size.px16};
     font-weight: bold;
