@@ -2,18 +2,20 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     max-width: 20%;
-    padding-top: 8rem;
+    padding-top: ${props => props.theme.size.px80};
 
     .columnTextsTitle{
-        font-size: 2.4rem;
-        margin-bottom: 2.4rem;
+        font-size: ${props => props.theme.size.px24};
+        margin-bottom:${props => props.theme.size.px24};
         font-weight: bold;
+        text-align: center;
     }
 
     .columnTextsText{
-        font-size: 1.6rem;
-        margin-bottom: 2.4rem;
-        line-height: 2.4rem;
+        font-size: ${props => props.theme.fonts.p};
+        margin-bottom: ${props => props.theme.size.px24};
+        line-height: ${props => props.theme.size.px24};
+        text-align: center;
     }
 
 `

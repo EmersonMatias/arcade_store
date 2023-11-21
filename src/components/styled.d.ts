@@ -25,6 +25,7 @@ declare module 'styled-components' {
     }
 
     size: {
+      px4: string,
       px16: string,
       px24: string,
       px32: string,
@@ -34,6 +35,12 @@ declare module 'styled-components' {
       px120: string,
       px160: string,
       px200: string,
+      px240: string,
+      px300: string,
+      px320: string,
+      px350: string,
+      px430: string,
+      px500: string,
       px680: string,
       px700: string
       px820: string,

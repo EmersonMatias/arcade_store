@@ -13,7 +13,7 @@ export const Container = styled.div`
 export const HeroSectionContent = styled.div`
     text-align: center;
     padding: 0 ${props => props.theme.size.px200};
-    margin-top: ${props => props.theme.size.px120};
+    margin-top: ${props => props.theme.size.px200};
     margin-bottom: ${props => props.theme.size.px120}; ;
     display: flex;
     flex-direction: column;

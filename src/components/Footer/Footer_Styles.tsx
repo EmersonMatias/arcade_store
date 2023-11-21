@@ -6,7 +6,7 @@ export const Container = styled.footer`
 
 export const TopFooter = styled.div`
     width: 100%;
-    padding: 0rem 24rem 4rem 24rem;
+    padding: 0rem ${props => props.theme.size.px160} ${props => props.theme.size.px4} ${props => props.theme.size.px160};
     background-color: #060506;
     color: #FFFFFF;
     display: flex;
@@ -19,11 +19,11 @@ export const TopFooter = styled.div`
         align-items: center;
 
         .iconLogo{
-        font-size: 8rem;
+        font-size: ${props => props.theme.size.px80};
         }
 
         .iconTitle{
-            font-size: 4rem;
+            font-size: ${props => props.theme.size.px40};
             font-weight: bold;
         }
     }
@@ -33,12 +33,12 @@ export const TopFooter = styled.div`
 
 export const BottomFooter = styled.div`
     width: 100%;
-    padding: 2rem 16rem;
+    padding: 2rem ${props => props.theme.size.px160};
     display: flex;
     justify-content: space-between;
 
     .title{
-            font-size: 2.4rem;
+            font-size: ${props => props.theme.size.px24};
             font-weight: bold;
     }
 
@@ -61,13 +61,13 @@ export const BottomFooter = styled.div`
 
     .bottomFooterMiddle{
         width: 21%;
-        font-size: 1.6rem;
+        font-size: ${props => props.theme.size.px24};
         line-height: 2rem;
-        text-align: justify;
+        text-align: center;
     }
 
     .bottomFooterRight{
-        font-size: 3.2rem;
+        font-size: ${props => props.theme.size.px32};
         width: 21%;
         flex-wrap: wrap;
         display: flex;

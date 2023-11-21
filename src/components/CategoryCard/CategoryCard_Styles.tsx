@@ -2,9 +2,9 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled(NavLink)`
-    width: 35rem;
-    height: 50rem;
-    border-radius: 4rem;
+    width: ${props => props.theme.size.px350};
+    height:  ${props => props.theme.size.px500};
+    border-radius: ${props => props.theme.size.px4};
     transition: 0.8s ;
     display: flex;
     justify-content: center;
@@ -15,40 +15,39 @@ export const Container = styled(NavLink)`
     text-decoration: none;
 
     .categoryCardImg{
-        width: 35rem;
-        height: 50rem;
+        width: ${props => props.theme.size.px350};
+        height:  ${props => props.theme.size.px500};
         object-fit: cover;
         position: absolute;
         transition: 0.8s ;
     }
             
     .categoryCardText{
-        font-size: 3.2rem;
         z-index: 2;
-         font-weight: bold;
-        color: #ffffff;
+  
     }
 
     &:hover{
         transition: 0.8s ;
 
         .categoryCardImg{
-            height: 70rem;
+            height:  ${props => props.theme.size.px700};
+
             transition: 0.8s ;
         }
 
         .gradient{
             transition: 0.8s;
-            width: 35rem;
-            height: 50rem;
-            border-radius: 4rem;
+            width: ${props => props.theme.size.px350};
+            height: ${props => props.theme.size.px500};
+            border-radius: ${props => props.theme.size.px4};
             background-color: #000000b7;
             position: absolute;
         }
 
         .categoryCardText{
             transition: 0.8s;
-            font-size: 4rem;
+            font-size: ${props => props.theme.fonts.h4};
         }
                 
     }    

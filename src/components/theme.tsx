@@ -21,6 +21,7 @@ export const theme: DefaultTheme = {
         p: "1.188rem",
     },
     size: {
+        px4: "0.25rem",
         px16: "1rem",
         px24: "1.5rem",
         px32: "2rem",
@@ -30,6 +31,12 @@ export const theme: DefaultTheme = {
         px120: "7.5rem",
         px160: "10rem",
         px200: "12.5rem",
+        px240: "15rem",
+        px320: "20rem",
+        px300: "18.75",
+        px350: "21.875rem",
+        px430: "26.875rem",
+        px500: "31.25rem",
         px680: "42.5rem",
         px820: "51.25rem",
         px700: "43.75rem"
