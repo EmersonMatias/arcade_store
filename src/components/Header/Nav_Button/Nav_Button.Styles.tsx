@@ -8,12 +8,12 @@ export const Container = styled.div`
     position: relative;
 
     .navButtonIcon{
-        font-size: ${props => props.theme.size.px32};
+        font-size: 2rem;
     }
 `
 
 export const PoppoverContainer = styled.div`
-    padding: ${props => props.theme.size.px16};
+    padding: 1rem;
     width: max-content;
     top: 120%;
     right: 0;

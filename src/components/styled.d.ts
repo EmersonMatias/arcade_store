@@ -22,29 +22,6 @@ declare module 'styled-components' {
       h5: string,
       h6: string,
       p: string,
-    }
-
-    size: {
-      px4: string,
-      px16: string,
-      px24: string,
-      px32: string,
-      px40: string,
-      px48: string,
-      px80: string,
-      px120: string,
-      px160: string,
-      px200: string,
-      px240: string,
-      px300: string,
-      px320: string,
-      px350: string,
-      px430: string,
-      px500: string,
-      px680: string,
-      px700: string
-      px820: string,
-
     },
     colors: {
       black: string

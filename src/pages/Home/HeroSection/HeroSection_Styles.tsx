@@ -4,7 +4,7 @@ import Background from "../../../assets/background.svg"
 export const Container = styled.div`
     width: 100%;
     height: 100vh;
-    padding-top: ${props => props.theme.size.px80};
+    padding-top: 5rem;
     color: #FFFFFF;
     background-image: url(${Background});
     background-size: cover;
@@ -12,11 +12,11 @@ export const Container = styled.div`
 
 export const HeroSectionContent = styled.div`
     text-align: center;
-    padding: 0 ${props => props.theme.size.px200};
-    margin-top: ${props => props.theme.size.px200};
-    margin-bottom: ${props => props.theme.size.px120}; ;
+    padding: 0 12.5rem;
+    margin-top: 12.5rem;
+    margin-bottom: 7.5rem;
     display: flex;
     flex-direction: column;
-    gap: ${props => props.theme.size.px16};
+    gap: 1rem;
     align-items: center;
 `

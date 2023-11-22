@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const Container = styled.header<IHeader>`
     width: 100%;
     top: 0;
-    height: ${props => props.theme.size.px120};
-    padding: 0 ${props => props.theme.size.px120};
+    height: 7.5rem;
+    padding: 0 7.5rem;
     display: flex;
     position: absolute;
     justify-content: space-between;
@@ -22,10 +22,10 @@ export const Logo = styled(NavLink)`
     align-items: center;
     text-decoration: none;
     color: #FFFFFF;
-    gap: ${props => props.theme.size.px16};
+    gap: 1rem;
     
     .logoIcon{
-        font-size: ${props => props.theme.size.px48}
+        font-size: 3rem;
     }
 `
 

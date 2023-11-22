@@ -4,8 +4,8 @@ import styled from "styled-components";
 export const Button = styled.button`
     width:fit-content ;
     font-size: ${props => props.theme.fonts.p};
-    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px32};
-    border-radius: ${props => props.theme.size.px32};
+    padding: 1rem 2rem;
+    border-radius: 2rem;
     font-weight: bold;
     border: none;
 `
@@ -24,9 +24,9 @@ export const ButtonNavLink = styled(NavLink)`
     width:fit-content ;
     height: fit-content ;
     font-size: ${props => props.theme.fonts.p};
-    padding: ${props => props.theme.size.px16} ${props => props.theme.size.px32};
-    border-radius: ${props => props.theme.size.px32};
-    gap: ${props => props.theme.size.px16};
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    gap: 1rem;
     font-weight: bold;
     border: none;
     text-decoration: none;
