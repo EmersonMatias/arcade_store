@@ -2,27 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    padding: 15rem 10rem 5rem 10rem;
+    padding: 20rem 10rem 10rem 10rem;
     background-color: #060506;
     color: #FFFFFF;
+`
 
-    .bestSellerTop{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 5rem;
-    }
-
-    .bestSellerTitle{
-        font-size: 5.6rem;
-        font-weight: bold;
-
-    }
-
-    .bestSellersProducts{
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
+export const GeneralSectionHeader= styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
 `
 

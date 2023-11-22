@@ -35,32 +35,6 @@ export default function Home_Page() {
       <HeroSection products={products}/>
 
 
-      <button
-        style={{ backgroundColor: "red" }}
-        onClick={() => {
-          dispatch({
-            type: "cart/add",
-            payload: "jogo 4"
-          })
-        }}
-      >Cart
-      </button>
-      <button
-        style={{ backgroundColor: "red" }}
-        onClick={() => {
-          dispatch({
-            type: "test/add",
-            payload: "teste 4"
-          })
-        }}
-      >Teste
-      </button>
-      <select name="select" >
-        <option value="valor1">Valor 1</option>
-        <option value="valor2" selected>Valor 2</option>
-        <option value="valor3">Valor 3</option>
-      </select>
-
       <GeneralSection name="MAIS VENDIDOS" products={products} path="maisvendidos" />
 
       <CategorySection />

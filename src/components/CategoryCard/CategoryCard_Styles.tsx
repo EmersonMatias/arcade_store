@@ -16,7 +16,7 @@ export const Container = styled(NavLink)`
 
     .categoryCardImg{
         width: 21.875rem;
-        height:  31.25;
+        height:  31.25rem;
         object-fit: cover;
         position: absolute;
         transition: 0.8s ;
@@ -24,15 +24,14 @@ export const Container = styled(NavLink)`
             
     .categoryCardText{
         z-index: 2;
-  
+        transition: 0.8s ;
     }
 
     &:hover{
         transition: 0.8s ;
 
         .categoryCardImg{
-            height:  43.75rem;
-
+            height:  40rem;
             transition: 0.8s ;
         }
 

@@ -14,6 +14,8 @@ export default function Product({id, name, price, productImage, size}: IProduct)
                 </ProductImageBackground>
             </Link>
 
+
+
             <NavLinkStyled to={id.toString()} onClick={ScrollToTop}>
                 <p className="productName">{name}</p>
                 <p className="productPrice">R$ {pricea}</p>
