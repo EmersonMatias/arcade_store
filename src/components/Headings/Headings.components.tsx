@@ -16,6 +16,11 @@ export const Heading3 = styled.h3`
     font-weight: bold;
     line-height: ${props => props.theme.lineHeight.h3};
 `
+export const Heading3Unbold = styled.h3`
+    font-size: ${props => props.theme.fonts.h3};
+    line-height: ${props => props.theme.lineHeight.h3};
+`
+
 export const Heading4 = styled.h4`
     font-size: ${props => props.theme.fonts.h4};
     font-weight: bold;

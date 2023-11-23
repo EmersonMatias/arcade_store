@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    padding: 8rem 16rem;
+    padding: 5rem 10rem;
     background-color: #1D1B1D;
 
     .categories{

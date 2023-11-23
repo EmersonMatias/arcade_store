@@ -12,6 +12,7 @@ import {WhiteButton, WhiteButtonNavLink } from "../../components/Buttons/Buttons
 
 export default function Home_Page() {
   const { data: games } = useProductsQuery("category=game")
+  const {data: periferico} = useProductsQuery("category=periferico")
   const { data: products } = useProductsQuery("")
   const { cartList } = useSelector(rootReducer => rootReducer.cartReducer)
   const { test } = useSelector(rootReducer => rootReducer.testReducer)
@@ -40,6 +41,8 @@ export default function Home_Page() {
       <CategorySection />
 
       <PromotionSection />
+
+      <GeneralSection name="DÊ UM UPGRADE NO SEU SETUP" products={periferico} path="perifericos"/>
 
       <Banner>
         <img className="bannerImg" src="https://olhardigital.com.br/wp-content/uploads/2023/05/Games-Brasil-e1686075484409.jpg" />
