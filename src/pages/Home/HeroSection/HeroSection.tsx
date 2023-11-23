@@ -8,6 +8,7 @@ import "swiper/css/navigation"
 import { IProduct } from "../../../components/Product/Product";
 import { AxiosResponse } from "axios";
 import "swiper/css"
+import { viewWidth } from "./function";
 
 
 type THeroSection = {
@@ -15,20 +16,18 @@ type THeroSection = {
 }
 
 export default function HeroSection({ products }: THeroSection) {
-
+  
     return (
         <Container>
             <HeroSectionContent>
                 <Heading1>ARCADE STORE</Heading1>
                 <Heading4Unbold>Mais poder ao seu gaming.</Heading4Unbold>
                 <Heading6Unbold>
-                    Bem-vindo à Arcade, onde os gamers se encontram para desbravar universos digitais,
-                    onde os consoles e periféricos são mais do que dispositivos -
-                    são portais para aventuras inesquecíveis.
-                    Aqui, sua jornada começa, sua história gamer se expande
+                    Bem-vindo à Arcade, onde os gamers se encontram para desbravar universos digitais.
+                
                 </Heading6Unbold>
                 <WhiteButton
-                    style={{ marginTop: "1.5rem" }}
+                    style={{ marginTop: "1rem"}}
                     onClick={() => {
                         const getItem = document.getElementById("newsletter")
                         if (getItem) {
@@ -41,8 +40,8 @@ export default function HeroSection({ products }: THeroSection) {
         <Swiper
                 modules={[Autoplay]}
                 loop={true} cssMode={true}
-                slidesPerView={5}
-                style={{ pointerEvents: "none" }}
+                slidesPerView={viewWidth()}
+                style={{ pointerEvents: "none", marginTop: "clamp(2rem , 7vw, 8rem)" }}
                 autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: false, waitForTransition: true, stopOnLastSlide: false }}
             >
                 {products?.data.map(({ id, category, productImage }) => (
@@ -51,7 +50,7 @@ export default function HeroSection({ products }: THeroSection) {
                             <SwiperSlide
                                 key={id}
                                 style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                <img style={{ width: "clamp(10rem , 14vw, 18.75rem)" }} src={productImage} />
+                                <img style={{ width: "clamp(15rem , 15.65vw, 18.75rem)" }} src={productImage} />
                             </SwiperSlide>
                         }
                     </>

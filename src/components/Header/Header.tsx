@@ -24,6 +24,7 @@ export default function Header() {
                 <Nav_Button path="/" icon={  <AiOutlineShoppingCart/>} />
             </NavBar>
 
+            
             <GiHamburgerMenu className="hamburguerIcon" />
 
 
