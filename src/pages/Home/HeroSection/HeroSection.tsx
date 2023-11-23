@@ -37,14 +37,13 @@ export default function HeroSection({ products }: THeroSection) {
                         console.log(getItem)
                     }}>Começar</WhiteButton>
             </HeroSectionContent>
-
-            <Swiper
+  
+        <Swiper
                 modules={[Autoplay]}
                 loop={true} cssMode={true}
                 slidesPerView={5}
                 style={{ pointerEvents: "none" }}
                 autoplay={{ delay: 2000, disableOnInteraction: false, pauseOnMouseEnter: false, waitForTransition: true, stopOnLastSlide: false }}
-
             >
                 {products?.data.map(({ id, category, productImage }) => (
                     <>
@@ -52,7 +51,7 @@ export default function HeroSection({ products }: THeroSection) {
                             <SwiperSlide
                                 key={id}
                                 style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                <img style={{ width: "18.75rem" }} src={productImage} />
+                                <img style={{ width: "clamp(10rem , 14vw, 18.75rem)" }} src={productImage} />
                             </SwiperSlide>
                         }
                     </>

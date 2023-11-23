@@ -26,15 +26,17 @@ export default function PromotionSection() {
                 {promotions.map(({ top, right, url }) => (
                     <PromotionImage top={top} right={right} key={url} src={url} />
                 ))}
+
+                <div className="promotionCard">
+                    <Heading3Unbold>A BOA DA SEMANA</Heading3Unbold>
+
+                    <p className="bigFont">10%</p>
+                    <Heading2>off em games</Heading2>
+                    <WhiteButtonNavLink style={{ marginTop: "1rem" }} to="games" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
+                </div>
             </PromotionImagesContainer>
 
-            <div className="promotionCard">
-                <Heading3Unbold>A BOA DA SEMANA</Heading3Unbold>
 
-                <p className="bigFont">10%</p>
-                <Heading2>off em games</Heading2>
-                <WhiteButtonNavLink style={{ marginTop: "1rem" }} to="games" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
-            </div>
         </Container>
     )
 }

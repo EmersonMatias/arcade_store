@@ -7,14 +7,22 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     color: #FFFFFF;
+`
+
+export const PromotionImagesContainer = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    background-color: aliceblue;
 
     .promotionCard{
             width: 35rem;
             box-shadow: rgb(16, 1, 14) 0px 20px 30px;
             border-radius: 2.4rem;
-            top: 12%;
-            left: 8%;
+            top: 8rem;
+            left: 8rem;
             padding: 1.5rem 3rem;
             background: linear-gradient(135deg, rgba(246, 0, 164, 0.1), rgba(255, 255, 255, 0));
             backdrop-filter: blur(70px);
@@ -31,13 +39,7 @@ export const Container = styled.div`
                 font-weight: bold;
             }
         }
-`
 
-export const PromotionImagesContainer = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 `
 
 export const PromotionImage = styled.img<{top: number, right: number}>`
@@ -49,4 +51,5 @@ export const PromotionImage = styled.img<{top: number, right: number}>`
     margin-top: ${props => props.top}rem;
     background-color: #9cc9f0;
     box-shadow: rgb(255, 255, 255,0.3) 0px 0px 50px 1px;
+    background-color: aqua;
 `

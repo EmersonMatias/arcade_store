@@ -16,7 +16,7 @@ export const ProductsContainer = styled.div`
     padding: 6rem 0rem;
     place-items: center;
     display: grid;
-    grid-row-gap: 4rem;
+    grid-row-gap: 1rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-auto-flow: row; 
 `

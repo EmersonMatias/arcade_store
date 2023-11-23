@@ -9,7 +9,8 @@ const Container = styled.div`
 
 export const Banner = styled.div`
     width: 100%;
-    height: 55rem;
+    padding: 0 5rem;
+    height: 34.375rem;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -17,9 +18,10 @@ export const Banner = styled.div`
     position: relative;
 
     .bannerImg{
+        height: 100%;
         width: 100%;
-        top: -25rem;
         position: absolute;
+        object-fit: cover;
     }
 
     .bannerContent{
@@ -29,22 +31,14 @@ export const Banner = styled.div`
         justify-content: center;
 
         z-index: 2;
-        .bannerContentTitle{
-            font-size: 8rem;
-            font-weight: bold;
-        }
-
-        .bannerContentText{
-            font-size: 4rem;
-            margin-bottom: 4rem;
-        }
     }
 `
 
 
 export const Newsletter = styled.div`
     width: 100%;
-    height: 50rem;
+    height: 31.25rem;
+    padding: 0 5rem;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -52,23 +46,18 @@ export const Newsletter = styled.div`
     justify-content: center;
 
     .newsletterImg{
+        height: 100%;
         width: 100%;
         position: absolute;
-        top: -25rem;
+        object-fit: cover;
     }
 
     .newsletterContent{
         display: flex;
         flex-direction: column;
         z-index: 2;
+        align-items: center;
         
-        .newsletterContentTitle{
-            font-size: 8rem;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-
         .newsletterContentText{
             font-size: 2.4rem;
             width: 40rem;

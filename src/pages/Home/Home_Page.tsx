@@ -9,6 +9,7 @@ import { ScrollToTop } from "../../utils/functions";
 import useProductsQuery from "../../hooks/useProductsQuery";
 import { useSelector, useDispatch } from "react-redux"
 import {WhiteButton, WhiteButtonNavLink } from "../../components/Buttons/Buttons.components";
+import { Heading1, Heading3Unbold, Heading4Unbold, Heading5Unbold } from "../../components/Headings/Headings.components";
 
 export default function Home_Page() {
   const { data: games } = useProductsQuery("category=game")
@@ -48,9 +49,9 @@ export default function Home_Page() {
         <img className="bannerImg" src="https://olhardigital.com.br/wp-content/uploads/2023/05/Games-Brasil-e1686075484409.jpg" />
         <BlackShadow />
         <div className="bannerContent">
-          <h3 className="bannerContentTitle">GASTE E GANHE</h3>
-          <p className="bannerContentText">Economize 20% ao gastar mais de R$ 500,00</p>
-          <WhiteButtonNavLink to="produtos" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
+          <Heading1>GASTE E GANHE</Heading1>
+          <Heading3Unbold style={{textAlign: "center"}}>Economize 20% ao gastar mais de R$ 500,00</Heading3Unbold>
+          <WhiteButtonNavLink style={{marginTop: "2rem"}} to="produtos" onClick={ScrollToTop}>Comprar agora</WhiteButtonNavLink>
         </div>
       </Banner>
 
@@ -60,8 +61,8 @@ export default function Home_Page() {
         <img className="newsletterImg" src={NewsletterBackground} />
         <BlackShadow />
         <div className="newsletterContent">
-          <h3 className="newsletterContentTitle">Newsletter</h3>
-          <p className="newsletterContentText">Assine e receba atualizações sobre novos produtos e ofertas especiais</p>
+          <Heading1 style={{marginBottom: "1rem"}}>Newsletter</Heading1>
+          <Heading4Unbold style={{marginBottom: "2rem" , textAlign: "center"}}>Assine e receba atualizações sobre novos produtos e ofertas especiais</Heading4Unbold>
           <input className="newsletterInput" placeholder="Email" />
           <WhiteButton>Enviar</WhiteButton>
         </div>
