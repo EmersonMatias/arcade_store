@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    padding: clamp(12rem, 16.667vw, 20rem) clamp(0rem, 8.33vw, 10rem) clamp(5rem, 8.33vw, 10rem) clamp(0rem, 8.33vw, 10rem);
+    padding: clamp(5rem, 8.33vw, 10rem) clamp(0rem, 8.33vw, 10rem) clamp(5rem, 8.33vw, 10rem) clamp(0rem, 8.33vw, 10rem);
+
     background-color: #060506;
     color: #FFFFFF;
 `

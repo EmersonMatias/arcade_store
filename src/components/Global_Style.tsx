@@ -53,11 +53,13 @@ table {
 }
 
 html{
-		font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	background-color: #060506;
 
 	@media screen and (max-width: 700px) {
         font-size: 90%;
     }
+
 }
 
 `

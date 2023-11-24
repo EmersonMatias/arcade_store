@@ -8,6 +8,7 @@ export const Container = styled.div`
     background-image: url(${Background});
     background-size: cover;
     background-position: center;
+    margin-bottom: clamp(7rem, 8.33vw, 10rem);
 `
 //12.5rem
 export const HeroSectionContent = styled.div`

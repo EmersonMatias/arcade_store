@@ -8,7 +8,7 @@ import "swiper/css/navigation"
 import "./navigationStyle.css"
 import { ScrollToTop } from "../../utils/functions";
 import { WhiteButtonNavLink } from "../Buttons/Buttons.components";
-import { Heading2, Heading3 } from "../Headings/Headings.components";
+import {Heading3 } from "../Headings/Headings.components";
 
 export default function GeneralSection({ name, products, path }: IGeneralSection) {
     //mobile slidesperview=1

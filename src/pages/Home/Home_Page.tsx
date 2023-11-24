@@ -35,9 +35,9 @@ export default function Home_Page() {
     <Container>
 
       <HeroSection products={products}/>
+    
 
-
-      <GeneralSection name="MAIS VENDIDOS" products={products} path="maisvendidos" />
+      <GeneralSection name="MAIS VENDIDOS" products={products} path="maisvendidos"  />
 
       <CategorySection />
 
