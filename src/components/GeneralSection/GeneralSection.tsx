@@ -8,26 +8,45 @@ import "swiper/css/navigation"
 import "./navigationStyle.css"
 import { ScrollToTop } from "../../utils/functions";
 import { WhiteButtonNavLink } from "../Buttons/Buttons.components";
-import { Heading2 } from "../Headings/Headings.components";
+import { Heading2, Heading3 } from "../Headings/Headings.components";
 
 export default function GeneralSection({ name, products, path }: IGeneralSection) {
+    //mobile slidesperview=1
+
+    function aaa(){
+        const viewWidth = window.innerWidth
+        console.log(viewWidth)
+        if(viewWidth < 650){
+            return 1
+        }else  if(viewWidth < 1100){
+            return 2
+        }else  if(viewWidth < 1400){
+            return 3
+        }else{
+            return 4
+        }
+
+
+    }
 
     return (
         <Container>
             <GeneralSectionHeader>
-                <Heading2>{name}</Heading2>
-                <WhiteButtonNavLink to={path} onClick={ScrollToTop}>Ver tudo</WhiteButtonNavLink>
+                <Heading3>{name}</Heading3>
+                <WhiteButtonNavLink className="marginMobile" to={path} onClick={ScrollToTop}>Ver tudo</WhiteButtonNavLink>
             </GeneralSectionHeader>
 
+            
             <Swiper
                 modules={[Navigation, Pagination]}
                 loop={true} cssMode={true}
-                slidesPerView={4}
-                centeredSlides={true}
+                slidesPerView={aaa()}
                 navigation={{ enabled: true }}
+                style={{display: "flex"}}
             >
                 {products?.data.map(({ id, category, name, price, productImage, promotion }) => (
-                    <SwiperSlide key={id}>
+                    <SwiperSlide key={id} style={{display: "flex", justifyContent: "center", alignContent: "center", height: "100%"}}
+                    >
                         <Product
                             id={id}
                             category={category}
@@ -36,6 +55,7 @@ export default function GeneralSection({ name, products, path }: IGeneralSection
                             productImage={productImage}
                             promotion={promotion}
                             size="small"
+                            
                         />
                     </SwiperSlide>
                 ))}

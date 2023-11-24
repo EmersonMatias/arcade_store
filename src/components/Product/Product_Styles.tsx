@@ -2,8 +2,10 @@ import styled from "styled-components";
 import BackgoundProduct from "../../assets/background.jpg"
 import { NavLink } from "react-router-dom";
 
+
+
 export const Container = styled.div<TProductComponent>`
-    width: ${props => props.size === "normal" ? "43rem" : "20rem"};
+    width: clamp(13.5rem, 15vw ,18rem);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +21,6 @@ export const Container = styled.div<TProductComponent>`
     }
 
   
-
     .productName{
         max-height: 10rem;
         min-height: 10rem;
@@ -29,16 +30,15 @@ export const Container = styled.div<TProductComponent>`
         justify-content: center;
     }
 
-  
-
-  
 `
- 
+ /*
+  padding: 2rem 2.5rem;
+  width:  8rem;
+   transform: scale(1.15);
+ */
 
 export const ProductImageBackground = styled.div<TProductComponent>`
-    width: ${props => props.size === "normal" ? "30rem" : "20rem"};
-    height:  ${props => props.size === "normal" ? "35rem" : "25rem"};
-    border-radius: 1.6rem;
+    padding: clamp(3rem,3.33vw,4rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -49,15 +49,24 @@ export const ProductImageBackground = styled.div<TProductComponent>`
     overflow: hidden;
 
     img{
-        height:  ${props => props.size === "normal" ? "25rem" : "15rem"};
+        width: clamp(9rem, 8.333vw ,10rem );
         -webkit-box-reflect:below 0px linear-gradient(rgba(0, 0, 0,0), rgba(0, 0, 0,0.3));
     }
 
     &:hover{
         img{
-            transform: scale(1.3);
+            transform: scale(1.25);
         }
     }
+
+    @media screen and (max-width: 600px) {
+        &:hover{
+            img{
+                transform: scale(1.12);
+            }
+        }
+    }
+    
 `
 
 export const NavLinkStyled = styled(NavLink)`

@@ -20,8 +20,10 @@ export default function Product({id, name, price, productImage, size}: IProduct)
                 <p className="productName">{name}</p>
                 <p className="productPrice">R$ {pricea}</p>
             </NavLinkStyled>
-            
-            <PurpleButton className="aaa" name="Adicionar"/>
+          
+             <PurpleButton className="aaa" name="Adicionar"/>
+         
+           
 
         </Container>
     )

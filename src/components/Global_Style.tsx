@@ -54,6 +54,10 @@ table {
 
 html{
 		font-family: 'Roboto', sans-serif;
+
+	@media screen and (max-width: 700px) {
+        font-size: 90%;
+    }
 }
 
 `
